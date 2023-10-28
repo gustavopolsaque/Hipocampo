@@ -1,0 +1,130 @@
+:root {
+    --azul-claro:#22D4FD;
+    --branco:#F6F6F6;
+    --preto:#000000;
+    --cinza-escuro: #272727;
+    --fonte-titulo: 'Krona One';
+    --fonte-texto: 'Montserrat';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--preto);
+    font-size: 1.5rem;
+    color: var(--branco)
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link{
+    flex-direction: column;
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--azul-claro);
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8% 15%;
+    gap: 82px;
+}
+
+div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo_portfolio {
+    font-size: 2.25rem;
+    font-family: var(--fonte-titulo);
+}
+
+.titulo_portfolio_azul {
+    color: var(--azul-claro);
+}
+
+.texto_principal {
+    font-family: var(--fonte-texto);
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.link_subtitulo {
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+}
+
+.link_social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border:#F6F6F6;
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 21.5px 0;
+    font-family: var(--fonte-texto);
+    color: var(--branco);
+    border: 2px solid var(--azul-claro);
+    border-radius: 8px;
+}
+
+.link_social:hover {
+    background-color: var(--cinza-escuro);
+    padding: 3%;
+}
+
+.imagem_apresentacao {
+    width: 50%;
+}
+
+footer {
+    color: var(--preto);
+    font-family: var(--fonte-texto);
+    text-align: center;
+    padding: 24px;
+    background-color: var(--azul-claro);
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    div {
+        width: auto;
+    }
+}
