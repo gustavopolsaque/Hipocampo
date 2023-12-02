@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustavo Henrique Polsaque Cavalcante">
+    <title>Comandos de Interação</title>
+</head>
+<body>
+    <header>
+        <h1>Comandos de Interação</h1>
+    </header>
+    <main>
+        <p>Comandos de interação são comandos que criam campos a serem preenchidos ou alterados pelos usuários. Este tipo de comando é normalmente utilizado em formulários ou campos de pesquisa.</p>
+        <p>Abaixo irei citar alguns desses comandos e em que situações são usados:</p>
+        <dl>
+            <dt>a</dt>
+                <section>
+                    <dd>A tag <code>a</code> possui a função de criar um link para outras páginas ou seções do documento.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;Exercício de &lt;a href="../ProjetosHTMLCSS/CursoemVideo/exercicios/ex010/index.html" target="_blank" rel="nofollow"&gt;links&lt;/a&gt;&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Exercício de <a href="../ProjetosHTMLCSS/CursoemVideo/exercicios/ex010/index.html" target="_blank" rel="nofollow">links</a></p>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>download</code> indica que, ao clicar no link, irá baixar o arquivo citado.</p>
+                    <p>O atributo <code>hrel</code> indica o endereço do link para onde será redirecionado.</p>
+                    <p>O atributo <code>hreflang</code> diz ao navegador em que idioma a página do link estará.</p>
+                    <p>O atributo <code>media</code> ainda não utilizei para saber suas funcionalidades.</p>
+                    <p>O atributo <code>ping</code> ainda não utilizei para saber suas funcionalidades.</p>
+                    <p>O atributo <code>referrerpolicy</code> ainda não utilizei para saber suas funcionalidades.</p>
+                    <p>O atributo <code>rel</code> diz ao navegador qual a relação da presente página com a página do link.</p>
+                    <p>O atributo <code>target</code> define como será aberta a página do link no navegador.</p>
+                    <p>O atributo <code>type</code> diz qual será o formato do documento presente no link.</p>
+                </section>
+            <dt>datalist</dt>
+                <section>
+                    <dd>A tag <code>datalist</code> cria uma lista de opções predefinidas.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;
+    &lt;label for="iprof"&gt;Profissão: &lt;/label&gt;
+    &lt;input type="text" name="prof" id="iprof" list="lstprof"&gt;
+    &lt;datalist id="lstprof"&gt;
+        &lt;option&gt;Administração&lt;/option&gt;
+        &lt;option&gt;Contabilista&lt;/option&gt;
+        &lt;option&gt;Desenvolvedor&lt;/option&gt;
+        &lt;option&gt;Professor&lt;/option&gt;
+    &lt;/datalist&gt;
+&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>
+                        <label for="iprof">Profissão: </label>
+                        <input type="text" name="prof" id="iprof" list="lstprof">
+                        <datalist id="lstprof">
+                            <option>Administração</option>
+                            <option>Contabilista</option>
+                            <option>Desenvolvedor</option>
+                            <option>Professor</option>
+                        </datalist>
+                    </p>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>id</code> é o identificador da lista, usado para referenciar a um <code>input</code> específico.</p>
+                </section>
+            <dt>input</dt> 
+                <section>
+                    <dd>A tag <code>input</code> cria um campo para interação do usuário que varia dependendo do atributo <code>type</code>.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+    <code>&lt;p&gt;
+    &lt;label for="iprof"&gt;Profissão: &lt;/label&gt;
+    &lt;input type="text" name="prof" id="iprof" list="lstprof"&gt;
+    &lt;datalist id="lstprof"&gt;
+        &lt;option&gt;Administração&lt;/option&gt;
+        &lt;option&gt;Contabilista&lt;/option&gt;
+        &lt;option&gt;Desenvolvedor&lt;/option&gt;
+        &lt;option&gt;Professor&lt;/option&gt;
+    &lt;/datalist&gt;
+    &lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>
+                        <label for="iprof">Profissão: </label>
+                        <input type="text" name="prof" id="iprof" list="lstprof">
+                        <datalist id="lstprof">
+                            <option>Administração</option>
+                            <option>Contabilista</option>
+                            <option>Desenvolvedor</option>
+                            <option>Professor</option>
+                        </datalist>
+                    </p>
+                    <p>Como esta tag possui MUITOS atributos que podem ser utilizados, vou citar apenas alguns que são mais essenciais:</p>
+                    <p>O atributo <code>id</code> é o identificador da resposta.</p>
+                    <p>O atributo <code>list</code> indica a qual lista o campo de preenchimento deve receber a resposta.</p>
+                    <p>O atributo <code>name</code> define o nome do campo de preenchimento.</p>
+                    <p>O atributo <code>placeholder</code> coloca um texto de exibição no campo de preenchimento.</p>
+                    <p>O atributo <code>required</code> faz o campo de preenchimento ser obrigatório para o envio do formulário.</p>
+                    <p>O atributo <code>type</code> especifica o tipo de entrada que o campo irá aceitar.</p>
+                </section>
+            <dt>label</dt>
+                <section>
+                    <dd>A tag <code>label</code> faz o texto que se refere a um <code>input</code>.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+    <code>&lt;p&gt;
+    &lt;label for="iprof"&gt;Profissão: &lt;/label&gt;
+    &lt;input type="text" name="prof" id="iprof" list="lstprof"&gt;
+    &lt;datalist id="lstprof"&gt;
+        &lt;option&gt;Administração&lt;/option&gt;
+        &lt;option&gt;Contabilista&lt;/option&gt;
+        &lt;option&gt;Desenvolvedor&lt;/option&gt;
+        &lt;option&gt;Professor&lt;/option&gt;
+    &lt;/datalist&gt;
+    &lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>
+                        <label for="iprof">Profissão: </label>
+                        <input type="text" name="prof" id="iprof" list="lstprof">
+                        <datalist id="lstprof">
+                            <option>Administração</option>
+                            <option>Contabilista</option>
+                            <option>Desenvolvedor</option>
+                            <option>Professor</option>
+                        </datalist>
+                    </p>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>for</code> faz uma ligação entre o <code>label</code> e um <code>id</code> de um <code>input</code>.</p>
+                </section>
+            <dt>option</dt>
+                <section>
+                    <dd>A tag <code>option</code> são as opções de resposta de um <code>select</code>.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser: </p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;
+    &lt;label for="iest"&gt;Estado: &lt;/label&gt;
+    &lt;select name="estado" id="iest"&gt;
+        &lt;option value=""&gt;--- Escolha ---&lt;/option&gt;
+        &lt;option value="MG"&gt;Minas Gerais&lt;/option&gt;
+        &lt;option value="RJ"&gt;Rio de Janeiro&lt;/option&gt;
+        &lt;option value="SP"&gt;São Paulo&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>
+                        <label for="iest">Estado: </label>
+                        <select name="estado" id="iest">
+                            <option value="">--- Escolha ---</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </select>
+                    </p>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>label</code> faz a resposta mais curta aparecer na tela.</p>
+                    <p>O atributo <code>selected</code> define que esta opção está pré-selecionada.</p>
+                    <p>O atributo <code>value</code> define o que será enviado quando esta opção for selecionada.</p>
+                </section>
+            <dt>select</dt>
+                <section>
+                    <dd>A tag <code>select</code> cria uma lista de seleção.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser: </p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;
+    &lt;label for="iest"&gt;Estado: &lt;/label&gt;
+    &lt;select name="estado" id="iest"&gt;
+        &lt;option value=""&gt;--- Escolha ---&lt;/option&gt;
+        &lt;option value="MG"&gt;Minas Gerais&lt;/option&gt;
+        &lt;option value="RJ"&gt;Rio de Janeiro&lt;/option&gt;
+        &lt;option value="SP"&gt;São Paulo&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>
+                        <label for="iest">Estado: </label>
+                        <select name="estado" id="iest">
+                            <option value="">--- Escolha ---</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </select>
+                    </p>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>id</code> é o identificador da lista de seleção.</p>
+                    <p>O atributo <code>multiple</code> permite selecionar múltiplas opções.</p>
+                    <p>O atributo <code>name</code> define o nome do campo de seleção.</p>
+                    <p>O atributo <code>required</code> faz o campo de seleção ser obrigatório para o envio do formulário.</p>
+                </section>
+            <dt>textarea</dt>
+                <section>
+                    <dd>A tag <code>textarea</code> cria um campo para o usuário digitar com quebra de linha.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser: </p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;
+    &lt;label for="imsg"&gt;Mensagem: &lt;/label&gt;
+    &lt;textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Coloque sua mensagem aqui..."&gt;&lt;/textarea&gt;
+&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>
+                        <label for="imsg">Mensagem: </label>
+                        <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Coloque sua mensagem aqui..."></textarea>
+                    </p>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>Os atributos <code>cols</code> e <code>rows</code> definem o tamanho do campo de texto baseando-se em colunas e linhas.</p>
+                    <p>O atributo <code>id</code> é o identificador do campo de texto.</p>
+                    <p>O atributo <code>name</code> define o nome do campo de texto.</p>
+                    <p>O atributo <code>placeholder</code> coloca um texto de exibição no campo de texto.</p>
+                    <p>O atributo <code>required</code> faz o campo de seleção ser obrigatório para o envio do formulário.</p>
+                </section>
+        </dl>
+        <a href="../index.html">Voltar</a>
+    </main>
+    <footer>
+        <p>Colocar as referências dos Direitos autorais e Redes sociais</p>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </footer>
+</body>
+</html>

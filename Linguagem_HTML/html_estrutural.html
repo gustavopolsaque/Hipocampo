@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustavo Henrique Polsaque Cavalcante">
+    <title>Comandos Estruturais</title>
+</head>
+<body>
+    <header>
+        <h1>Comandos Estruturais</h1>
+    </header>
+    <main>
+        <p>Comandos estruturais são comandos que criam separações de conteúdo nas páginas.</p>
+        <p>Abaixo, irei citar alguns desses comandos e em que situações são usados:</p>
+        <dl>
+            <dt>article</dt>
+                <section>
+                    <dd>A tag <code>article</code> serve para englobar um artigo independente do conteúdo da página.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;article&gt;
+    &lt;p&gt;O projeto HIPOCAMPO teve início no mês de outubro de 2023.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <article>
+                        <p>O projeto HIPOCAMPO teve início no mês de outubro de 2023.</p>
+                    </article>
+                </section>
+            <dt>aside</dt>
+                <section>
+                    <dd>A tag <code>aside</code> engloba os conteúdos <em>à parte</em> da página, sendo como um conteúdo secundário para complemento.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;aside&gt;
+    &lt;p&gt;O &lt;code&gt;aside&lt;/code&gt; faz parte das tags que são possíveis de se utilizar com HTML.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <aside>
+                        <p>O <code>aside</code> faz parte das tags que são possíveis de se utilizar com HTML.</p>
+                    </aside>
+                </section>
+            <dt>body</dt>
+                <section>
+                    <dd>A tag <code>body</code> é o corpo do documento e engloba todo conteúdo visível do documento.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;body&gt;
+    &lt;p&gt;Estou dentro do body&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <body>
+                        <p>Estou dentro do body</p>
+                    </body>
+                </section>
+            <dt>col</dt>
+                <section>
+                    <dd>A tag <code>col</code> é usada dentro de uma tabela junto do <code>colgroup</code> para criar um tipo de estilização por coluna, a função deste é dizer quais estilizações a coluna terá.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;table style="border: 1px solid black;"&gt;
+    &lt;colgroup&gt;
+        &lt;col span="2" style="text-align: center;"&gt;
+    &lt;/colgroup&gt;
+    &lt;tr&gt;
+        &lt;td style="border: 1px solid black;"&gt;Celula 1&lt;/td&gt;
+        &lt;td style="border: 1px solid black;"&gt;Celula 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <table style="border: 1px solid black;">
+                        <colgroup>
+                            <col span="2" style="text-align: center;">
+                        </colgroup>
+                        <tr>
+                            <td style="border: 1px solid black;">Celula 1</td>
+                            <td style="border: 1px solid black;">Celula 2</td>
+                        </tr>
+                    </table>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>span</code> permite com que a estilização seja aplicada a mais de uma coluna.</p>
+                </section>
+            <dt>colgroup</dt>
+                <section>
+                    <dd>A tag <code>colgroup</code> é usada dentro de uma tabela junto do <code>colgroup</code> para criar um tipo de estilização por coluna, a função dela é reunir as configurações das colunas de uma tabela.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;table style="border: 1px solid black;"&gt;
+    &lt;colgroup&gt;
+        &lt;col span="2" style="text-align: center;"&gt;
+    &lt;/colgroup&gt;
+    &lt;tr&gt;
+        &lt;td style="border: 1px solid black;"&gt;Celula 1&lt;/td&gt;
+        &lt;td style="border: 1px solid black;"&gt;Celula 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <table style="border: 1px solid black;">
+                        <colgroup>
+                            <col span="2" style="text-align: center;">
+                        </colgroup>
+                        <tr>
+                            <td style="border: 1px solid black;">Celula 1</td>
+                            <td style="border: 1px solid black;">Celula 2</td>
+                        </tr>
+                    </table>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>span</code> permite com que a estilização seja aplicada a mais de uma coluna.</p>
+                </section>
+            <dt>div</dt>
+                <section>
+                    <dd>A tag <code>div</code> é usada para criar divisões no documento englobando outras tags para facilitar estilizações.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;div&gt;
+    &lt;p&gt;Este texto esta dentro de uma divisão.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <div>
+                        <p>Este texto esta dentro de uma divisão.</p>
+                    </div>
+                </section>
+            <dt>dl</dt>
+                <section>
+                    <dd>A tag <code>dl</code> é usada juntamente com as tag <code>dt</code> e <code>dt</code> para criar uma lista de definições, sua função neste tipo de lista agrupar toda lista de definição.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;dl&gt;
+    &lt;dt&gt;Água&lt;/dt&gt;
+    &lt;dd&gt;Liquido transparente composto de H&lt;sub&gt;2&lt;/sub&gt;O&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <dl>
+                        <dt>Água</dt>
+                        <dd>Liquido transparente composto de H<sub>2</sub>O</dd>
+                    </dl>
+                </section>
+            <dt>fieldset</dt>
+                <section>
+                    <dd>A tag <code>fieldset</code> agrupa elementos dentro de um formulário.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;fieldset name="texto"&gt;
+    &lt;legend&gt;Formulário&lt;/legend&gt;
+&lt;/fieldset&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <fieldset name="texto">
+                        <legend>Formulário</legend>
+                    </fieldset>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>disabled</code> desabilita os campos do formulário.</p>
+                    <p>O atributo <code>form</code> faz uma conexão entre o formulário e um conjunto de campos.</p>
+                    <p>O atributo <code>name</code> adiciona um nome ao formulário.</p>
+                </section>
+            <dt>footer</dt>
+                <section>
+                    <dd>A tag <code>blockquote</code> é o ródape do documento.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;footer&gt;
+    &lt;p&gt;Ródape do documento.&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <div> <!--É uma div pois não posso colocar mais um footer no código, mas não tem efeito visual-->
+                        <p>Ródape do documento.</p>
+                    </div>
+                </section>
+            <dt>form</dt>
+                <section>
+                    <dd>A tag <code>form</code> é usado para emglobar um formulário.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;form action="cadastro.php" method="get"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Dados pessoais&lt;/legend&gt;
+        &lt;p&gt;
+            &lt;label for="inome"&gt;Nome:&lt;/label&gt;
+            &lt;input type="text" name="nome" id="inome"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for="iemail"&gt;E-mail: &lt;/label&gt;
+            &lt;input type="email" name="email" id="iemail" autocomplete="email" required&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for="itel"&gt;Telefone: &lt;/label&gt;
+            &lt;input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx)xxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required&gt;
+        &lt;/p&gt;
+    &lt;/fieldset&gt;
+    &lt;p&gt;
+        &lt;input type="submit" value="Enviar"&gt;
+        &lt;input type="reset" value="Limpar"&gt;
+    &lt;/p&gt;
+&lt;/form&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <form action="cadastro.php" method="get">
+                        <fieldset>
+                            <legend>Dados pessoais</legend>
+                            <p>
+                                <label for="inome">Nome:</label>
+                                <input type="text" name="nome" id="inome">
+                            </p>
+                            <p>
+                                <label for="iemail">E-mail: </label>
+                                <input type="email" name="email" id="iemail" autocomplete="email" required>
+                            </p>
+                            <p>
+                                <label for="itel">Telefone: </label>
+                                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx)xxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+                            </p>
+                        </fieldset>
+                        <p>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                        </p>
+                    </form>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>accept-charset</code> Nunca usei.</p>
+                    <p>O atributo <code>action</code> indica para onde sera enviado os dados do formulário.</p>
+                    <p>O atributo <code>autocomplete</code> é booleano e serve para o navegador completar automaticamente com respostas anteriores da página ou usadas frequentemente.</p>
+                    <p>O atributo <code>enctype</code> Nunca usei.</p>
+                    <p>O atributo <code>method</code> define como os dados serão enviados pela URL, se será decodificado (<code>get</code>) ou codificado (<code>post</code>).</p>
+                    <p>O atributo <code>name</code> define o nome do formulário.</p>
+                    <p>O atributo <code>novalidate</code> Nunca usei.</p>
+                    <p>O atributo <code>rel</code> Nunca usei.</p>
+                    <p>O atributo <code>target</code> define como a resposta será exibida na tela.</p>
+                </section>
+            <dt>head</dt>
+                <section>
+                    <dd></dd>
+                    <dd>A tag <code>head</code> agrupa os dados que não aparecem no resultado do documento.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+                <code>&lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Título&lt;/title&gt;
+                &lt;/head&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Não aparece resultado na tela.</p>
+                </section>
+            <dt>header</dt>
+                <section>
+                    <dd>A tag <code>header</code> é o cabeçalho do documento.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+                <code>&lt;header&gt;
+                    &lt;p&gt;Cabeçalho&lt;/p&gt;
+                &lt;/header&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <div><!--É uma div, pois não posso colocar mais um header no código, mas não tem efeito visual-->
+                        <p>Cabeçalho</p>
+                    </div>
+                </section>
+            <dt>html</dt>
+                <section>
+                    <dd>A tag <code>html</code> agrupa QUASE todo código HTML.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+                <code>&lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;p&gt;Documento em HTML&lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <div><!--É uma div, pois não posso colocar mais um html no código, mas não tem efeito visual-->
+                        <head>
+                            <meta charset="UTF-8">
+                        </head>
+                        <body>
+                            <p>Documento em HTML</p>
+                        </body>
+                    </div>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados, como:</p>
+                    <p>O atributo <code>lang</code> indica ao navegador em qual língua a página deve ser lida.</p>
+                </section>
+            <dt>iframe</dt>
+                <section>
+                    <dd>A tag <code>iframe</code> cria uma janela dentro do documento para outra página.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+                <code>&lt;iframe src="../index.html" frameborder="0" scrolling="no"&gt;&lt;a href="../index.html" target="_blank"&gt;Página inicial do Hipocampo&lt;/a&gt;&lt;/iframe&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <iframe src="../index.html" frameborder="0" scrolling="no"><a href="../index.html" target="_blank">Página inicial do Hipocampo</a></iframe>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados, como:</p>
+                    <p>O atributo <code>allow</code> cria restrições a serem impostas no <code>iframe</code>.</p>
+                    <p>O atributo <code>allowfullscreen</code> define se o <code>iframe</code> pode ficar em tela cheia ou não.</p>
+                    <p>O atributo <code>height</code> altera a altura do vídeo que será reproduzido.</p>
+                    <p>O atributo <code>name</code> define o nome do <code>iframe</code>.</p>
+                    <p>O atributo <code>referrerpolicy</code> é usado para que o <code>iframe</code> possa ou não enviar dados ao ser buscado.</p>
+                    <p>O atributo <code>sandbox</code> impõe restrições de captura de informação ou funções.</p>
+                    <p>O atributo <code>src</code> indica o endereço URL do frame que será buscado.</p>
+                    <p>O atributo <code>srcdoc</code> usa código de <abbr title="HyperText Markup Language">HTML</abbr> para gerar um código dentro do frame.</p>
+                    <p>O atributo <code>width</code> altera a largura do vídeo que será reproduzido.</p>
+                </section>
+            <dt>img</dt>
+                <section>
+                    <dd>A tag <code>img</code> adiciona uma imagem ao documento.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+                <code>&lt;img src="imagem.png" alt="Imagem"&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Aparece na tela a primeira imagem que estiver no <code>src</code>.</p>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados, como:</p>
+                    <p>O atributo <code>alt</code> cria um texto alternativo para a imagem para caso ela não apareça ou para leitores de tela.</p>
+                    <p>O atributo <code>height</code> altera a altura do vídeo que será reproduzido.</p>
+                    <p>O atributo <code>src</code> indica o endereço URL do vídeo que será buscado.</p>
+                    <p>O atributo <code>width</code> altera a largura do vídeo que será reproduzido.</p>
+                </section>
+            <dt>main</dt>
+                <section>
+                    <dd></dd>
+                    <dd>A tag <code>main</code> é o conteúdo principal do documento.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+                <code>&lt;main&gt;
+                    &lt;p&gt;Corpo principal&lt;/p&gt;
+                &lt;/main&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <div><!--É uma div, pois não posso colocar mais um main no código, mas não tem efeito visual-->
+                        <p>Corpo principal</p>
+                    </div>
+                </section>
+            <dt>nav</dt>
+                <section>
+                    <dd>A tag <code>nav</code> engloba um grupo de links para navegação.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+                <code>&lt;nav&gt;
+                    &lt;a href="#"&gt;Mesma página 1&lt;/a&gt;
+                    &lt;a href="#"&gt;Mesma página 2&lt;/a&gt;
+                    &lt;a href="#"&gt;Mesma página 3&lt;/a&gt;
+                &lt;/nav&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <div><!--É uma div, pois como é apenas um exemplo e não uma navegação de verdade, mas a tag nav não tem efeito visual-->
+                        <a href="#">Mesma página 1</a>
+                        <a href="#">Mesma página 2</a>
+                        <a href="#">Mesma página 3</a>
+                    </div>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados, como:</p>
+                    <p>O atributo <code>cite</code> permite adicionar uma URL para especificar a fonte do trecho citado dentro da tag <code>blockquote</code>.</p>
+                </section>
+            <dt>optgroup</dt>
+                <section>
+                    <dd>A tag <code>optgroup</code> agrupa opções de um <code>select</code>.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+                <code>&lt;form action="cadastro.php" method="post" autocomplete="on"&gt;
+                    &lt;p&gt;
+                        &lt;label for="iest"&gt;Estado: &lt;/label&gt;
+                        &lt;select name="estado" id="iest"&gt;
+                            &lt;option value=""&gt;--- Escolha ---&lt;/option&gt;
+                            &lt;optgroup label="Região Sudeste"&gt;
+                                &lt;option value="MG"&gt;Minas Gerais&lt;/option&gt;
+                                &lt;option value="RJ"&gt;Rio de Janeiro&lt;/option&gt;
+                                &lt;option value="SP"&gt;São Paulo&lt;/option&gt;
+                            &lt;/optgroup&gt;
+                            &lt;optgroup label="Região Nordeste"&gt;
+                                &lt;option value="MA"&gt;Maranhão&lt;/option&gt;
+                                &lt;option value="PE"&gt;Pernambuco&lt;/option&gt;
+                                &lt;option value="RN"&gt;Rio Grande do Norte&lt;/option&gt;
+                            &lt;/optgroup&gt;
+                        &lt;/select&gt;
+                    &lt;/p&gt;
+                &lt;/form&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <form action="cadastro.php" method="post" autocomplete="on">
+                        <p>
+                            <label for="iest">Estado: </label>
+                            <select name="estado" id="iest">
+                                <option value="">--- Escolha ---</option>
+                                <optgroup label="Região Sudeste">
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                </optgroup>
+                                <optgroup label="Região Nordeste">
+                                    <option value="MA">Maranhão</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                    </form>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados, como:</p>
+                    <p>O atributo <code>cite</code> permite adicionar uma URL para especificar a fonte do trecho citado dentro da tag <code>blockquote</code>.</p>
+                </section>
+            <dt>ol</dt>
+                <section>
+                    <dd>A tag <code>ol</code> é usada juntamente com a tag <code>li</code> para criar uma lista ordenada.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+                <code>&lt;ol reversed start="5" type="I"&gt;
+                    &lt;li&gt;Item 1&lt;/li&gt;
+                    &lt;li&gt;Item 2&lt;/li&gt;
+                &lt;/ol&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <ol reversed start="5" type="I">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                    </ol>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados, como:</p>
+                    <p>O atributo <code>reversed</code> faz com que a ordem da lista seja ao contrário.</p>
+                    <p>O atributo <code>start</code> indica por qual número a lista deve começar.</p>
+                    <p>O atributo <code>type</code> define que tipo de marcador será utilizado na lista. Os tipos são o numérico (<code>1</code>), alfabeto maiúsculo e minúsculo (<code>A</code> e <code>a</code>) e números romanos maiúsculo e minúsculo (<code>I</code> e <code>i</code>).</p>
+                </section>
+            <dt>picture</dt>
+                <section>
+                    <dd>A tag <code>picture</code> cria um agrupamento de imagens podendo colocar condições para aparecer diferentes imagens.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;picture&gt;
+    &lt;source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"&gt;
+    &lt;source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"&gt;
+    &lt;img src="imagens/foto-g.png" alt="Imagem flexivel"&gt;
+&lt;/picture&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Aparece na tela a primeira imagem que estiver no <code>srcset</code> do <code>source</code> e cumprir os requisitos da <code>media</code>.</p>
+                </section>
+            <dt>section</dt>
+                <section>
+                    <dd>A tag <code>section</code> cria uma seção no documento.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;section&gt;
+    &lt;p&gt;Este texto esta dentro de uma seção.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <section>
+                        <p>Este texto esta dentro de uma seção.</p>
+                    </section>
+                </section>
+            <dt>table</dt>
+                <section>
+                    <dd>A tag <code>table</code> agrupa todo conteúdo da tabela.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;table style="border: 1px solid black;"&gt;
+    &lt;thead&gt;
+        &lt;th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;"&gt;cabeçario&lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="border: 1px solid black;"&gt;A&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td rowspan="2" style="border: 1px solid black;"&gt;B&lt;/td&gt;
+            &lt;td style="border: 1px solid black;"&gt; C&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td headers="ex" style="border: 1px solid black;"&gt;D&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <table style="border: 1px solid black;">
+                        <thead>
+                            <th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;">cabeçario</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="border: 1px solid black;">A</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" style="border: 1px solid black;">B</td>
+                                <td style="border: 1px solid black;"> C</td>
+                            </tr>
+                            <tr>
+                                <td headers="ex" style="border: 1px solid black;">D</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            <dt>tbody</dt>
+                <section>
+                    <dd>A tag <code>tbody</code> agrupa o conteúdo principal da tabela.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;table style="border: 1px solid black;"&gt;
+    &lt;thead&gt;
+        &lt;th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;"&gt;cabeçario&lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="border: 1px solid black;"&gt;A&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td rowspan="2" style="border: 1px solid black;"&gt;B&lt;/td&gt;
+            &lt;td style="border: 1px solid black;"&gt; C&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td headers="ex" style="border: 1px solid black;"&gt;D&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <table style="border: 1px solid black;">
+                        <thead>
+                            <th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;">cabeçario</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="border: 1px solid black;">A</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" style="border: 1px solid black;">B</td>
+                                <td style="border: 1px solid black;"> C</td>
+                            </tr>
+                            <tr>
+                                <td headers="ex" style="border: 1px solid black;">D</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            <dt>tfoot</dt>
+                <section>
+                    <dd>A tag <code>tfoot</code> cria um rodapé na tabela.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;table style="border: 1px solid black;"&gt;
+    &lt;thead&gt;
+        &lt;th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;"&gt;cabeçario&lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="border: 1px solid black;"&gt;A&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td rowspan="2" style="border: 1px solid black;"&gt;B&lt;/td&gt;
+            &lt;td style="border: 1px solid black;"&gt; C&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td headers="ex" style="border: 1px solid black;"&gt;D&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;td colspan="2" style="border: 1px solid black;"&gt;rodapé&lt;/td&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <table style="border: 1px solid black;">
+                        <thead>
+                            <th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;">cabeçario</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="border: 1px solid black;">A</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" style="border: 1px solid black;">B</td>
+                                <td style="border: 1px solid black;"> C</td>
+                            </tr>
+                            <tr>
+                                <td headers="ex" style="border: 1px solid black;">D</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td colspan="2" style="border: 1px solid black;">rodapé</td>
+                        </tfoot>
+                    </table>
+                </section>
+            <dt>thead</dt>
+                <section>
+                    <dd>A tag <code>thead</code> cria um cabeçalho na tabela.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+                        <code>&lt;table style="border: 1px solid black;"&gt;
+                            &lt;thead&gt;
+                                &lt;th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;"&gt;cabeçalho&lt;/th&gt;
+                            &lt;/thead&gt;
+                            &lt;tbody&gt;
+                                &lt;tr&gt;
+                                    &lt;td colspan="2" style="border: 1px solid black;"&gt;A&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td rowspan="2" style="border: 1px solid black;"&gt;B&lt;/td&gt;
+                                    &lt;td style="border: 1px solid black;"&gt; C&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td headers="ex" style="border: 1px solid black;"&gt;D&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <table style="border: 1px solid black;">
+                        <thead>
+                            <th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;">cabeçalho</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="border: 1px solid black;">A</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" style="border: 1px solid black;">B</td>
+                                <td style="border: 1px solid black;"> C</td>
+                            </tr>
+                            <tr>
+                                <td headers="ex" style="border: 1px solid black;">D</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            <dt>ul</dt>
+                <section>
+                    <dd>A tag <code>ul</code> é usada juntamente com a tag <code>li</code> para criar uma lista não ordenada.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+                        <code>&lt;ul&gt;
+                            &lt;li&gt;Item 1&lt;/li&gt;
+                            &lt;li&gt;Item 2&lt;/li&gt;
+                        &lt;/ul&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                    </ul>
+                </section>
+            <dt>video</dt>
+                <section>
+                    <dd>A tag <code>video</code> cria um agrupamento de vídeos podendo colocar condições para aparecer diferentes vídeos.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+                        <code>&lt;video width="600" poster="imagens.png" controls autoplay loop&gt;
+                            &lt;source src="video.mp4" type="video/mp4"&gt;
+                            &lt;source src="video.m4v" type="video/mp4"&gt;
+                            &lt;source src="video.webm" type="video/webm"&gt;
+                            &lt;source src="video.ogv" type="video/ogg"&gt;
+                        &lt;/video&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Aparece na tela o primeiro vídeo que estiver no <code>srcset</code> do <code>source</code> e for o primeiro a ser compatível com o navegador.</p>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>autoplay</code> faz com que o vídeo seja iniciado automaticamente, mas, em alguns navegadores não funciona a menos que esteja com o atributo <code>muted</code> junto.</p>
+                    <p>O atributo <code>controls</code> faz com que apareça os botões de controle do vídeo.</p>
+                    <p>O atributo <code>height</code> altera a altura do vídeo que será reproduzido.</p>
+                    <p>O atributo <code>loop</code> faz o vídeo se reiniciar assim que acabar.</p>
+                    <p>O atributo <code>muted</code> faz o vídeo ficar sem som até que seja alterado o volume.</p>
+                    <p>O atributo <code>poster</code> altera a tela inicial do vídeo até que seja iniciado.</p>
+                    <p>O atributo <code>preload</code> faz o vídeo carregar apenas quando o usuário interagir com ele.</p>
+                    <p>O atributo <code>src</code> indica o endereço URL do vídeo que será buscado.</p>
+                    <p>O atributo <code>width</code> altera a largura do vídeo que será reproduzido.</p>
+                </section>
+        </dl>
+        <a href="../index.html">Voltar</a>
+    </main>
+    <footer>
+        <p>Colocar as referências dos Direitos autorais e Redes sociais</p>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </footer>
+</body>
+</html>

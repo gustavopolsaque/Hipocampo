@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustavo Henrique Polsaque Cavalcante">
+    <title>Comandos de Funcionalidade</title>
+</head>
+<body>
+    <header>
+        <h1>Comandos de Funcionalidade</h1>
+    </header>
+    <main>
+        <p>Comandos de funcionalidade são comandos que normalmente são colocados antes e dentro do <code>head</code>. Eles têm funções que não interferem diretamente no conteúdo e na estruturação da página, mas possuem propriedades a serem lidas pelo navegador.</p>
+        <p>Abaixo, irei citar alguns desses comandos e algumas de suas variações:</p>
+        <dl>
+            <dt>link</dt>
+            <section>
+                <dd>A tag <code>link</code> cria uma ligação entre o documento citado dentro da tag com o presente documento. Essa ligação faz com que os dados do documento citado possam se manifestar e alterar as propriedades do presente documento.</dd>
+                <p>Um exemplo prático para esta tag poderia ser: </p>
+                <p>Código:</p>
+                <pre>
+<code>&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;link rel="shortcut icon" href="./assets/img/Favicon2.png" type="image/x-icon"&gt;</code></pre>
+                <p>Resultado:</p>
+                <p>Não aparece resultado na tela.</p>
+                <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                <p>O atributo <code>href</code> indica o endereço do documento que será ligado.</p>
+                <p>O atributo <code>rel</code> indica qual a relação que o documento citado terá com o presente documento.</p>
+                <p>O atributo <code>type</code> especifica o tipo de mídia do documento.</p>
+            </section>
+            <dt>meta</dt>
+            <section>
+                <dd>A tag <code>meta</code> define uma série de dados sobre o documento.</dd>
+                <p>Um exemplo prático para esta tag poderia ser: </p>
+                <p>Código:</p>
+                <pre>
+<code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta name="author" content="Eu"&gt;</code></pre>
+                <p>Resultado:</p>
+                <p>Não aparece resultado na tela.</p>
+                <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                <p>O atributo <code>charset</code> define os tipos de caracteres que o documento poderá renderizar.</p>
+                <p>O atributo <code>content</code> define os valores que serão associados aos atributos <code>name</code> e <code>http-equiv</code>.</p>
+                <p>O atributo <code>http-equiv</code> utilizei pouco então não sei direito o que faz.</p>
+                <p>O atributo <code>name</code> escolhe um tipo de nome para os meta dados.</p>
+            </section>
+            <dt>style</dt>
+            <section>
+                <dd>A tag <code>style</code> cria uma seção de código CSS dentro do próprio documento.</dd>
+                <p>Um exemplo prático para esta tag poderia ser: </p>
+                <p>Código:</p>
+                <pre>
+<code>&lt;style&gt;
+    mark {
+        background-color: lime;
+    }
+&lt;/style&gt;</code></pre>
+                <p>Resultado:</p>
+                <p>Eu não vou colocar o resultado visual pois pode vir a comprometer outras partes da página, mas tudo que estivesse dentro da tag <code>mark</code> ficaria marcado com verde limão.</p>
+                <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                <p>O atributo <code>media</code> pode ser usado para definir em que tipos de mídia ou tamanhos de tela uma determinada estilização será visível.</p>
+            </section>
+            <dt>title</dt>
+            <section>
+                <dd>A tag <code>title</code> é usada para dar nome ao título do documento que será visível na página de busca do navegador e na aba do navegador.</dd>
+                <p>Um exemplo prático para esta tag poderia ser: </p>
+                <p>Código:</p>
+                <pre>
+<code>&lt;title&gt;Comandos de Funcionalidade&lt;/title&gt;</code></pre>
+                <p>Resultado:</p>
+                <p>Está visível na aba da página no navegador.</p>
+            </section>
+        </dl>
+        <a href="../index.html">Voltar</a>
+    </main>
+    <footer>
+        <p>Colocar as referências dos Direitos autorais e Redes sociais</p>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </footer>
+</body>
+</html>

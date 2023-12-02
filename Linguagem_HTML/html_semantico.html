@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustavo Henrique Polsaque Cavalcante">
+    <title>Comandos Semânticos</title>
+</head>
+<body>
+    <header>
+        <h1>Comandos Semânticos</h1>
+    </header>
+    <main>
+        <p>Comandos semântico são comandos que passam o sentido sintaxico do texto para os navegadores interpretarem e entenderem melhor o conteúdo da página.</p>
+        <p>Abaixo irei citar alguns desses comandos e em que situações são usados:</p>
+        <dl>
+            <dt>abbr</dt>
+                <section>
+                    <dd>A tag <code>abbr</code> é usada para fazer a definição de uma abreviação.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser: </p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;abbr title="Brasil"&gt;BR&lt;/abbr&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <abbr title="Brasil">BR</abbr>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>title</code> é usado para definir qual a abreviação dentro da tag <code>abbr</code>.</p>
+                </section>
+            <dt>address</dt>
+                <section>
+                    <dd>A tag <code>address</code> é usada para informações de contato seja endereço físico, digital ou telefônico.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;address&gt;Rua das Avenidas 112&lt;br&gt;exemplo@exemplo.exemplo&lt;br&gt;+00 (00) 90000-0000&lt;/address&gt;</code></pre>
+                    <p>Resultado:</p><!--É uma div pois não posso colocar mais um main no código, mas não tem efeito visual-->
+                    <div>Rua das Avenidas 112<br>exemplo@exemplo.exemplo<br>+00 (00) 90000-0000</div>
+                </section>
+            <dt>audio</dt>
+                <section>
+                    <dd>A tag <code>audio</code> cria um audio ou um agrupamento de audios usando junto ao <code>source</code> podendo colocar condições para aparecer diferentes audios.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser: </p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;audio preload="metadata" controls loop&gt;
+    &lt;source src="../ProjetosHTMLCSS/CursoemVideo/exercicios/ex011/midia/guanacast-33.mp3" type="audio/mpeg"&gt;
+    &lt;source src="../ProjetosHTMLCSS/CursoemVideo/exercicios/ex011/midia/guanacast-33.mp3" type="audio/ogg"&gt;
+    &lt;source src="../ProjetosHTMLCSS/CursoemVideo/exercicios/ex011/midia/guanacast-33.mp3" type="audio/wav"&gt;
+    &lt;p&gt;Infelizmente seu navegador não consegue reproduzir áudio. &lt;a href="../ProjetosHTMLCSS/CursoemVideo/exercicios/ex011/midia/guanacast-33.mp3"&gt;Clique aqui para baixar o arquivo MP3&lt;/a&gt;</p>
+&lt;/audio&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <audio preload="metadata" controls loop>
+                        <source src="../ProjetosHTMLCSS/CursoemVideo/exercicios/ex011/midia/guanacast-33.mp3" type="audio/mpeg">
+                        <source src="../ProjetosHTMLCSS/CursoemVideo/exercicios/ex011/midia/guanacast-33.mp3" type="audio/ogg">
+                        <source src="../ProjetosHTMLCSS/CursoemVideo/exercicios/ex011/midia/guanacast-33.mp3" type="audio/wav">
+                        <p>Infelizmente seu navegador não consegue reproduzir áudio. Clique <a href="../ProjetosHTMLCSS/CursoemVideo/exercicios/ex011/midia/guanacast-33.mp3">aqui</a> para baixar o arquivo MP3</p>
+                    </audio>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>autoplay</code> faz com que o audio seja iniciado automaticamente, mas, em alguns navegadores não funciona a menos que esteja com o atributo <code>muted</code> junto.</p>
+                    <p>O atributo <code>controls</code> faz aparecer os controles do audio na tela.</p>
+                    <p>O atributo <code>loop</code> reproduz o audio assim que ele acabar.</p>
+                    <p>O atributo <code>muted</code> faz o audio ficar sem som até que seja alterado o volume.</p>
+                    <p>O atributo <code>preload</code> indica se o audio sera carregado apenas se interagirem, se carrega apenas o arquivo ou assim que a página carregar.</p>
+                    <p>O atributo <code>src</code> indica o endereço URL do audio que será buscado.</p>
+                </section>
+            <dt>blockquote</dt>
+                <section>
+                    <dd>A tag <code>blockquote</code> é usada fazer citações extensas de outra fonte.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p><p>Código:</p>
+                    <pre>
+<code>&lt;blockquote cite="endereco_eletronico"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos, delectus aliquid maiores dignissimos eligendi illo laboriosam commodi reprehenderit tempore est mollitia eum error iure numquam molestiae, adipisci officiis quam.&lt;/blockquote&gt;&lt;address&gt;escrito por Lorem ipsum&lt;/address&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <blockquote cite="endereco_eletronico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos, delectus aliquid maiores dignissimos eligendi illo laboriosam commodi reprehenderit tempore est mollitia eum error iure numquam molestiae, adipisci officiis quam.</blockquote><address>escrito por Lorem ipsum</address>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>cite</code> deixa adicionar uma URL para expecifica de a fonte do trecho citado dentro da tag <code>blockquote</code>.</p>
+                </section>
+            <dt>br</dt>
+                <section>
+                    <dd></dd>
+                    <dd>A tag <code>br</code> é usado para fazer uma quebra de linha dentro de outras tags.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;Todo esse texto &lt;br&gt;esta no mesmo parágrafo &lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Todo esse texto <br>esta no mesmo parágrafo</p>
+                </section>
+            <dt>caption</dt>
+                <section>
+                    <dd>A tag <code>caption</code> cria uma legenda/titulo fora da tabela na parte superior.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;table style="border: 1px solid black;"&gt;
+    &lt;caption&gt;Titulo&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;td&gt;44&lt;/td&gt;
+        &lt;td&gt;55&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <table style="border: 1px solid black;">
+                        <caption>Titulo</caption>
+                        <tr>
+                            <td>44</td>
+                            <td>55</td>
+                        </tr>
+                    </table>
+                </section>
+            <dt>code</dt>
+                <section>
+                    <dd>A tag <code>code</code> é usada para citar códigos de conputação</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;No &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt; a tag &lt;code&gt;a&lt;/code&gt; serve para criar link&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>No <abbr title="HyperText Markup Language">HTML</abbr> a tag <code>a</code> serve para criar link</p>
+                </section>
+            <dt>dd</dt>
+                <section>
+                    <dd>A tag <code>dd</code> é usada juntamente com as tag <code>dl</code> e <code>dt</code> para criar uma lista de definições, sua função neste tipo de lista é dar definição ao termo da lista de definição.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;dl&gt;
+    &lt;dt&gt;Água&lt;/dt&gt;
+    &lt;dd&gt;Liquido transparente composto de H&lt;sub&gt;2&lt;/sub&gt;O&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <dl>
+                        <dt>Água</dt>
+                        <dd>Liquido transparente composto de H<sub>2</sub>O</dd>
+                    </dl>
+                </section>
+            <dt>dt</dt>
+                <section>
+                    <dd>A tag <code>dt</code> é usada juntamente com as tag <code>dl</code> e <code>dd</code> para criar uma lista de definições, sua função neste tipo de lista ser preenchido com o termo a ser descrito na lista de definição.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;dl&gt;
+    &lt;dt&gt;Água&lt;/dt&gt;
+    &lt;dd&gt;Liquido transparente composto de H&lt;sub&gt;2&lt;/sub&gt;O&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <dl>
+                        <dt>Água</dt>
+                        <dd>Liquido transparente composto de H<sub>2</sub>O</dd>
+                    </dl>
+                </section>
+            <dt>del</dt>
+                <section>
+                    <dd>A tag <code>del</code> é usada para dizer que um texto foi excluído na página após a primeira publicação.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;Fui no mercado e esqueci &lt;del cite="URL.algumacoisa" datetime="2023-11-04T16:58:36Z"&gt;a carteira&lt;/del&gt; &lt;ins cite="URL.algumacoisa" datetime="2023-11-04T16:59:13Z"&gt;o cartão&lt;/ins&gt;&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Fui no mercado e esqueci <del cite="URL.algumacoisa" datetime="2023-11-04T16:58:36Z">a carteira</del> <ins cite="URL.algumacoisa" datetime="2023-11-04T16:59:13Z">o cartão</ins></p>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>cite</code> deixa adicionar uma URL para expecifica do porque o texto foi excluido.</p>
+                    <p>O atributo <code>datetime</code> permite colocar a data, hora e até citar o fuso horário em que foi excluido o texto</p>
+                </section>
+            <dt>em</dt>
+                <section>
+                    <dd>A tag <code>em</code> é usada para enfatizar uma frase ou palavra de um texto</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;Eu &lt;em&gt;pretendo&lt;/em&gt; ficar atualizando esse projeto&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Eu <em>pretendo</em> ficar atualizando esse projeto</p>
+                </section>
+            <dt>h1 a 6</dt>
+                <section>
+                    <dd>As tags <code>h1</code> a <code>h6</code> são usadas como titulos no documento em grau de hierarquia.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;h6&gt;Este é um h6 e o título da página é um h1&lt;/h6&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <h6>Este é um h6 e o título da página é um h1</h6>
+                </section>
+            <dt>ins</dt>
+                <section>
+                    <dd>A tag <code>ins</code> é usada para dizer que um texto foi inserido na página após a primeira publicação.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;Fui no mercado e esqueci &lt;del cite="URL.algumacoisa" datetime="2023-11-04T16:58:36Z"&gt;a carteira&lt;/del&gt; &lt;ins cite="URL.algumacoisa" datetime="2023-11-04T16:59:13Z"&gt;o cartão&lt;/ins&gt;&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Fui no mercado e esqueci <del cite="URL.algumacoisa" datetime="2023-11-04T16:58:36Z">a carteira</del> <ins cite="URL.algumacoisa" datetime="2023-11-04T16:59:13Z">o cartão</ins></p>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>cite</code> deixa adicionar uma URL para expecifica do porque o texto foi excluido.</p>
+                    <p>O atributo <code>datetime</code> permite colocar a data, hora e até citar o fuso horário em que foi excluido o texto</p>
+                </section>
+            <dt>legend</dt>
+                <section>
+                    <dd>A tag <code>legend</code> cria uma legenda/titulo para ser usada em um <code>fieldset</code> que normalmente é usado para formulários.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;fieldset&gt;
+    &lt;legend&gt;Formulário vazio&lt;/legend&gt;
+&lt;/fieldset&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <fieldset>
+                        <legend>Formulário vazio</legend>
+                    </fieldset>
+                </section>
+            <dt>li</dt>
+                <section>
+                    <dd>A tag <code>li</code> é usada juntamente com as tags <code>ol</code> ou <code>ul</code> para criar itens nas listas.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                    </ol>
+                </section>
+            <dt>mark</dt>
+                <section>
+                    <dd>A tag <code>mark</code> é usada para destacar um termo ou frase.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;Ele serve como &lt;mark&gt;marca texto&lt;/mark&gt;&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Ele serve como <mark>marca texto</mark></p>
+                </section>
+            <dt>p</dt>
+                <section>
+                    <dd>A tag <code>p</code> é usada para colocar paragrafos nos documentos.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;O céu esta sem nuvens hoje&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>O céu esta sem nuvens hoje</p>
+                </section>
+            <dt>pre</dt>
+                <section>
+                    <dd>A tag <code>pre</code> cria um espaço pré-formatado que exibe o texto da forma como está escrito no código.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;&lt;pre&gt;Tudo que        esta escrito aqui 
+    pertence ao mesmo   parágrafo&lt;/pre&gt;&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p><pre>Tudo que        está escrito aqui 
+                        pertence ao mesmo   parágrafo</pre></p>
+                </section>
+            <dt>q</dt>
+                <section>
+                    <dd>A tag <code>q</code> é usada fazer citações curtas de outra fonte.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;q cite="endereco_eletronico"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/q&gt;&lt;address&gt;escrito por Lorem ipsum&lt;/address&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <q cite="endereco_eletronico">Lorem ipsum dolor sit amet consectetur adipisicing elit.</q><address>escrito por Lorem ipsum</address>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>cite</code> deixa adicionar uma URL para expecificar a fonte do trecho citado dentro da tag <code>q</code>.</p>
+                </section>
+            <dt>source</dt>
+                <section>
+                    <dd>A tag <code>source</code> é usado para buscar diferentes formatos de audio, imagem e video retornando o primeiro que for compativel com o navegador.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;source media="(max-width: 750px)" sizes="(min-width: 600px) 500px" srcset="imagem_a_ser_buscada.algo" type="image/algo"&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Aparece na tela a imagem que estiver no <code>srcset</code>.</p>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>media</code> permite que o retorno do <code>source</code> seja diferente dependendo do valor maximo ou minimo da tela.</p>
+                    <p>O atributo <code>sizes</code> permite definir o tamanho da imagem de retorno do <code>source</code>.</p>
+                    <p>O atributo <code>src</code> é onde fica a URL do retorno do <code>source</code> <em>apenas</em> se for usada nas tags <code>audio</code> ou <code>video</code>.</p>
+                    <p>O atributo <code>srcset</code> é onde fica a URL do retorno do <code>source</code> <em>apenas</em> se for usada na tag <code>picture</code>.</p>
+                    <p>O atributo <code>type</code> indica qual sera o formato do arquivo presente no <code>source</code>.</p>
+                </section>
+            <dt>span</dt>
+                <section>
+                    <dd>A tag <code>span</code> cria uma divisão no meio de um texto para na maioria das vzes colocar uma estilização.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;Estou ficando &lt;span style="color: green;"&gt;sem ideias&lt;/span&gt; para exemplo.&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Estou ficando <span style="color: green;">sem ideias</span> para exemplo.</p>
+                </section>
+            <dt>strong</dt>
+                <section>
+                    <dd></dd>
+                    <dd>A tag <code>strong</code> é usada para indica que o trecho possui importância.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;Eu &lt;strong&gt;preciso&lt;/strong&gt; caminhar amanhâ.&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Eu <strong>preciso</strong> caminhar amanhâ.</p>
+                </section>
+            <dt>sub</dt>
+                <section>
+                    <dd>texto subscrito</dd>
+                    <dd>A tag <code>sub</code> é usada para fazer um termo subscrito.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;Poderia usar o H&lt;sub&gt;2&lt;/sub&gt;O de novo mas vou usar o CO&lt;sub&gt;2&lt;/sub&gt; para variar.&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>Poderia usar o H<sub>2</sub>O de novo mas vou usar o CO<sub>2</sub> para variar.</p>
+                </section>
+            <dt>sup</dt>
+                <section>
+                    <dd></dd>
+                    <dd>A tag <code>sup</code> é usada para fazer um termo sobrescrito.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;p&gt;O número 2&lt;sup&gt;10&lt;/sup&gt; é igual a 1024&lt;/p&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <p>O número 2<sup>10</sup> é igual a 1024</p>
+                </section>
+            <dt>td</dt>
+                <section>
+                    <dd>A tag <code>td</code> é usada junto a tags <code>th</code> e <code>tr</code> em uma tabela, sua função na tabela é cria um novo campo na linha da tabela.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;table style="border: 1px solid black;"&gt;
+    &lt;thead&gt;
+        &lt;th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;"&gt;cabeçario&lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="border: 1px solid black;"&gt;A&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td rowspan="2" style="border: 1px solid black;"&gt;B&lt;/td&gt;
+            &lt;td style="border: 1px solid black;"&gt; C&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td headers="ex" style="border: 1px solid black;"&gt;D&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <table style="border: 1px solid black;">
+                        <thead>
+                            <th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;">cabeçario</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="border: 1px solid black;">A</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" style="border: 1px solid black;">B</td>
+                                <td style="border: 1px solid black;"> C</td>
+                            </tr>
+                            <tr>
+                                <td headers="ex" style="border: 1px solid black;">D</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>colspan</code> faz a mesclagem das celulas da colunas da tabela.</p>
+                    <p>O atributo <code>rowspan</code> faz a mesclagem das celulas da linha da tabela.</p>
+                    <p>O atributo <code>headers</code> faz com que a celula seja relacionada a um cabeçario sem necessáriamente esteja em sua coluna ou linha.</p>
+                </section>
+            <dt>th</dt>
+                <section>
+                    <dd>A tag <code>th</code> é usada junto a tags <code>thead</code>, <code>tr</code> e <code>td</code> em uma tabela, sua função na tabela é cria um novo campo na linha do cabeçario da tabela.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;table style="border: 1px solid black;"&gt;
+    &lt;thead&gt;
+        &lt;th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;"&gt;cabeçario&lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="border: 1px solid black;"&gt;A&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td rowspan="2" style="border: 1px solid black;"&gt;B&lt;/td&gt;
+            &lt;td style="border: 1px solid black;"&gt; C&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td headers="ex" style="border: 1px solid black;"&gt;D&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <table style="border: 1px solid black;">
+                        <thead>
+                            <th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;">cabeçario</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="border: 1px solid black;">A</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" style="border: 1px solid black;">B</td>
+                                <td style="border: 1px solid black;"> C</td>
+                            </tr>
+                            <tr>
+                                <td headers="ex" style="border: 1px solid black;">D</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>colspan</code> faz a mesclagem das celulas da colunas da tabela.</p>
+                    <p>O atributo <code>rowspan</code> faz a mesclagem das celulas da linha da tabela.</p>
+                    <p>O atributo <code>headers</code> faz com que a celula seja relacionada a um cabeçario sem necessáriamente esteja em sua coluna ou linha.</p>
+                    <p>O atributo <code>scope</code> especifica se o cabeçario faz referencia apenas a coluna (<code>col</code>) ou linha (<code>row</code>) em que se encontra sua primeira celula ou se a mesclagem de todas suas colunas(<code>colgroup</code>) ou linhas (<code>rowgroup</code>) que conta.</p>
+                </section>
+            <dt>tr</dt>
+                <section>
+                    <dd>A tag <code>tr</code> é usada junto a tags <code>th</code> e <code>td</code> em uma tabela, sua função na tabela é cria uma coluna para tabela.</dd>
+                    <p>Um exemplo prático para esta tag poderia ser:</p>
+                    <p>Código:</p>
+                    <pre>
+<code>&lt;table style="border: 1px solid black;"&gt;
+    &lt;thead&gt;
+        &lt;th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;"&gt;cabeçario&lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="border: 1px solid black;"&gt;A&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td rowspan="2" style="border: 1px solid black;"&gt;B&lt;/td&gt;
+            &lt;td style="border: 1px solid black;"&gt; C&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td headers="ex" style="border: 1px solid black;"&gt;D&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                    <p>Resultado:</p>
+                    <table style="border: 1px solid black;">
+                        <thead>
+                            <th colspan="2" id="ex" scope="colgroup" style="border: 1px solid black;">cabeçario</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="border: 1px solid black;">A</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" style="border: 1px solid black;">B</td>
+                                <td style="border: 1px solid black;"> C</td>
+                            </tr>
+                            <tr>
+                                <td headers="ex" style="border: 1px solid black;">D</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Esta tag possui alguns atributos que podem ser utilizados como:</p>
+                    <p>O atributo <code>colspan</code> faz a mesclagem das celulas da colunas da tabela.</p>
+                    <p>O atributo <code>rowspan</code> faz a mesclagem das celulas da linha da tabela.</p>
+                    <p>O atributo <code>headers</code> faz com que a celula seja relacionada a um cabeçario sem necessáriamente esteja em sua coluna ou linha.</p>
+                </section>
+        </dl>
+        <a href="../index.html">Voltar</a>
+    </main>
+    <footer>
+        <p>Colocar as referências dos Direitos autorais e Redes sociais</p>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </footer>
+</body>
+</html>
